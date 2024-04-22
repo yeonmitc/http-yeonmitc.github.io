@@ -5,6 +5,7 @@
   padding: 0;
   border-collapse: collapse;
   font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -39,7 +40,6 @@ section {
 section::-webkit-scrollbar {
   display: none;
 }
-
 .profile > img {
   width: 90%;
   padding: 10px;
@@ -92,8 +92,13 @@ hr {
   filter: grayscale(1);
   background-size: cover;
   background-color: lightgrey;
+  overflow: hidden;
 }
 
+.project-img > img {
+  width: 100%;
+  height: 100%;
+}
 .projects article:hover {
   border-bottom: solid 2px #f797c7;
 }
@@ -147,6 +152,11 @@ hr {
 
 .interests > article:hover .likes-img {
   filter: grayscale(0);
+  object-fit: cover;
+}
+.interests > article .likes-img > img {
+  width: 100%;
+  height: 100%;
 }
 
 .interests > article > h6 {
