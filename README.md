@@ -1,2 +1,2 @@
-# http-yeonmitc.github.io
+# yeonmitc.github.io
 main homepage
